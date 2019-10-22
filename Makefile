@@ -1,6 +1,6 @@
 PROJECT_ROOT = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
-OBJS = Raytracer2.o Camera.o Light.o Sphere.o Ray.o
+OBJS = Raytracer.o Camera.o Light.o Sphere.o Ray.o Model.o ModelToWorld.o
 
 CXX = g++
 CFLAGS = -Wall -g
@@ -14,4 +14,4 @@ raytracer:	$(OBJS)
 	$(CXX) -c $(CFLAGS) -o $@ $<
 
 clean:
-	rm -fr raytracer $(OBJS)
+	rm -fr raytracer $(OBJS) *.ppm
