@@ -1,0 +1,13 @@
+# Blender MTL File: 'sphere.blend'
+# Material Count: 1
+
+newmtl FrontColor
+Ns 1.0
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.300000 0.300000 0.300000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 6
+

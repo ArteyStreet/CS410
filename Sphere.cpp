@@ -10,7 +10,15 @@
 Sphere::Sphere() {
 	// TODO Auto-generated constructor stub
 	r = 0;
+	full = false;
 
+}
+
+Sphere::Sphere(Eigen::Vector3d& loc, double rad, Material m){
+	location = loc;
+	r = rad;
+	mat = m;
+	full = true;
 }
 
 Sphere::~Sphere() {
@@ -21,14 +29,18 @@ Sphere::Sphere(const Sphere &other) {
 	// TODO Auto-generated constructor stub
 	location = other.location;
 	r = other.r;
-	Ka = other.Ka;
-	Kd = other.Kd;
-	Ks = other.Ks;
-	Kr = other.Kr;
+	mat = other.mat;
+	full = other.full;
 }
 
 Sphere& Sphere::operator=(const Sphere& other){
-	Sphere temp(other);
-	return temp;
+	location = other.location;
+	r = other.r;
+	mat = other.mat;
+	full = other.full;
+	return *this;
 }
 
+Eigen::Vector3d Sphere::getNormal(){
+	return location;
+}
