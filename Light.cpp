@@ -19,6 +19,13 @@ Light::~Light() {
 	// TODO Auto-generated destructor stub
 }
 
+Light::Light(Eigen::Vector3d& loc, Eigen::Vector3d& emit, int e){
+	where = loc;
+	emittance = emit;
+	ambient = false;
+	w = e;
+}
+
 Light::Light(const Light &other) {
 	// TODO Auto-generated constructor stub
 	where = other.where;
@@ -28,7 +35,10 @@ Light::Light(const Light &other) {
 }
 
 Light& Light::operator=(const Light& other){
-	Light temp(other);
-	return temp;
+	where = other.where;
+	emittance = other.emittance;
+	w = other.w;
+	ambient = other.ambient;
+	return *this;
 }
 

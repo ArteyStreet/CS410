@@ -1,14 +1,13 @@
-# you may include comments here
-recursionlevel 0
-eye 0 0 0
-look 1 0 0
-up 0 0 1 
-d -1
-bounds -1 1 -1 1 
+eye 50 50 75
+look 50 50 -10
+up 0 1 0
+d -5
+bounds -3.6 3.6 -3.6 3.6
 res 256 256
-ambient 0.1 0.1 0.1 
-light  0 2 -2 1 0.7 0.2 0.4
-light  0 2 2 1 0.2 0.7 0.4 
-sphere 3 0 -1 0.5 0.2 0.2 0.2 0.7 0.7 0.7 0.5 0.5 0.5 0.5 0.5 0.5
-sphere 3 0 1 0.5 0.2 0.2 0.2 0.7 0.7 0.7 0.5 0.5 0.5 0.5 0.5 0.5
-sphere 10 0 0 5 0.2 0.2 0.2 0.7 0.7 0.7 0.5 0.5 0.5 0.5 0.5 0.5
+recursionlevel 5
+ambient 0.0 0.0 0.0
+light 10 10 100 1 0.5 0.5 0.5
+light 90 90 100 1 0.5 0.5 0.5
+model 1.0 0.0 0.0 -90 9 50 50 50 90 sphere.obj
+model 1.0 0.0 0.0 -90 6 40 60 35 90 sphere1.obj
+model 1.0 0.0 0.0 -90 6 60 40 35 90 sphere2.obj

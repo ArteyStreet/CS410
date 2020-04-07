@@ -18,6 +18,7 @@ public:
 	int w;
 	Light& operator=(const Light& other);
 	Light();
+	Light(Eigen::Vector3d& loc, Eigen::Vector3d& emit, int e = 1);
 	virtual ~Light();
 	Light(const Light& other);
 };
